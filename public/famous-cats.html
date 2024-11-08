@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Famous Internet Cats</title>
+    <link rel="stylesheet" href="famous-cats-styles.css">
+    <script defer src="main.js"></script>
+</head>
+
+<body>
+    <a class="skip-to-content-link" href="#mainContent">
+        Skip to content
+    </a>
+    <header>
+
+        <div class="branding">
+            <a href="index.html">
+                <img src="cat_logo.jpg" alt="Cat Logo" class="logo">
+            </a>
+            <div class="header-title">
+                <h1>Cats Power the Internet</h1>
+            </div>
+        </div>
+
+        <nav class="navigation">
+            <ul class="navigation-list">
+                <li class="dropdown">
+                    <a href="#" class="drop-botton"></a>
+                    <div id='drop-menu' class="dropdown-content">
+                        <a href="index.html">Home</a>
+                        <a href="famous-cats.html">Famous Cats</a>
+                        <a href="CatEvents.html">Cat Events</a>
+                    </div>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main id="#mainContent">
+        <div class="famous-cats-section">
+            <div class="cat-card">
+                <h2>Anna</h4>
+                <img class="cat-display-image" src="cat-on-fence.png" alt="A cat is lying on fence">
+                <p>Veniam excepturi cupiditate illo ab at, dolorum dolore quae perferendis fuga</p>
+                <p>Lorem ipsum sit <button class="subscribe-button open" type="button">subscribe</button> volupstate elit. </p>
+            </div>
+            <div class="cat-card">
+                <h2>Bob</h4>
+                <img class="cat-display-image" src="black-white-cat.png" alt="A black and white cat in front of green wall">
+                <p>Veniam excepturi cupiditate illo ab at, dolorum dolore quae perferendis fuga</p>
+                <p>Lorem ipsum sit <button class="subscribe-button open" type="button">subscribe</button> volupstate elit. </p>
+            </div>
+            <div class="cat-card">
+                <h2>Claire</h4>
+                <img class="cat-display-image" src="licking-cat.png" alt="A cat is licking the paw">
+                <p>Veniam excepturi cupiditate illo ab at, dolorum dolore quae perferendis fuga</p>
+                <p>Lorem ipsum sit <button class="subscribe-button open" type="button">subscribe</button> volupstate elit. </p>
+            </div>
+
+        </div>
+        <div class="famous-cats-section">
+            <div class="cat-card">
+                <h2>Diana</h4>
+                <img class="cat-display-image" src="orange-cat.png" alt="An orange cat is looking up">
+                <p>Veniam excepturi cupiditate illo ab at, dolorum dolore quae perferendis fuga</p>
+                <p>Lorem ipsum sit <button class="subscribe-button open" type="button">subscribe</button> volupstate elit. </p>
+            </div>
+            <div class="cat-card">
+                <h2>Ellen</h4>
+                <img class="cat-display-image" src="scratching-cat.png" alt="A cat is scratching the book">
+                <p>Veniam excepturi cupiditate illo ab at, dolorum dolore quae perferendis fuga</p>
+                <p>Lorem ipsum sit <button class="subscribe-button open" type="button">subscribe</button> volupstate elit. </p>
+            </div>
+            <div class="cat-card">
+                <h2>Fanny</h4>
+                <img class="cat-display-image" src="travel-cat.png" alt="A cat is in the cart, travelling">
+                <p>Veniam excepturi cupiditate illo ab at, dolorum dolore quae perferendis fuga</p>
+                <p>Lorem ipsum sit <button class="subscribe-button open" type="button">subscribe</button> volupstate elit. </p>
+            </div>
+
+        </div>
+        
+
+        <dialog class="modal">
+            <h3>Subscribe to the Latest Mews!</h3>
+            <form class="subscribe-form" action="/subscribe" method="POST">
+                <label class="subscription-label">
+                    <span class="register_email-label">Email: <span class="required">*required</span>:</span>
+                    <input name="email" type="text" id="subscribe-email" class="subscribe-email">
+                    <span class="email-error error-message"></span> 
+                </label>
+            
+                <label class="subscription-label">
+                    <span class="register_confirm-email-label">Confirm Email: <span class="required">*required</span>:</span>
+                    <input type="text" id="subscribe-confirm-email" class="subscribe-confirm-email">
+                    <span class="confirm-email-error error-message"></span>
+                </label>
+                <div class="form-buttons">
+                    <button class="subscribe-button-modal" type="submit">Subscribe</button>
+                    <button class="cancel-button close" type="button">Cancel</button>
+                </div>
+            </form>
+            
+        </dialog>
+    </main>
+
+    <footer>
+        <ul class="footer-links">
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="workforus.html">Work for Us</a></li>
+            <li><a href="ContactUs.html">Contact Us</a></li>
+            <li><a href="Social Media.html">Social</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

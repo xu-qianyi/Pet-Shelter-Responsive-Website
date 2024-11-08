@@ -1,0 +1,456 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: papayawhip;
+    font-size: 1rem;
+}
+
+p {
+    line-height: 1.2;
+    margin: 0.5rem;
+}
+
+/* Skip to content link */
+.skip-to-content-link {
+
+    height: auto;
+    left: 50%;
+    padding: 0;
+    position: absolute;
+    transform: translateY(-100%);
+    transition: transform 0.3s;
+}
+
+.skip-to-content-link:focus {
+    transform: translateY(0%);
+}
+
+/*Header*/
+header {
+    background-color: burlywood;
+}
+
+.logo {
+    height: 100px;
+    width: 100px;
+}
+
+/* Header-Navigation menu */
+
+.branding {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    height: fit-content;
+    align-items: center;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 1.5rem;
+}
+
+.header-title {
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.navigation .navigation-list {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: burlywood;
+}
+
+.navigation-list li {
+    position: relative;
+
+    transition: background-color 0.3s ease;
+}
+
+.drop-botton {
+    cursor: pointer;
+}
+
+.drop-botton::after {
+    display: inline-block;
+    content: " ";
+    height: 4rem;
+    width: 4rem;
+    padding-right: 0.5rem;
+
+    vertical-align: middle;
+
+    background-image: url(menu.png);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: burlywood;
+    width: max-content;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: opacity 0.3s ease;
+}
+
+.dropdown-content.open {
+    display: block;
+}
+
+.dropdown-content a {
+    color: #0000EE;
+    padding: 12px 16px;
+    display: block;
+    text-align: center;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+a:visited {
+    color: #800080;
+}
+
+.dropdown-content a:hover {
+    background-color: dodgerblue;
+    color: white;
+    text-decoration: none;
+}
+
+
+h2 {
+    width: 100%;
+    text-align: start;
+}
+
+/*cat cards section*/
+.subscribe-button {
+    color: blue;
+    border: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: underline;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.famous-cats-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.cat-card {
+    background: #eee;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    padding: 0.5rem;
+    margin: 1rem;
+    ;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    border-radius: 0.5rem;
+    border: solid 1px black;
+}
+
+.cat-display-image {
+    width: 200px;
+    height: 200px;
+    align-self: self-start;
+}
+
+
+/*modal*/
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal {
+    padding: 0.5rem;
+    width: 320px;
+}
+
+.modal h3 {
+    text-align: center;
+}
+
+.required {
+    font-style: italic;
+}
+
+subscribe-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.subscription-label {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    align-items: start;
+    
+}
+
+.subscription-label input {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    width: 95%;
+}
+
+.subscription-label select {
+    margin-top: 0.5rem;
+}
+
+.subscription-label.checkbox {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+
+.register_email-label,
+.register_confirm-email-label {
+    width:100%;
+}
+
+.error-message {
+    color: red;
+    display: none;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+.error{
+    border: 1px solid red;
+}
+
+.visible {
+    display: block;
+}
+
+.form-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.subscribe-button-modal {
+    margin: 1rem;
+    padding: 0.5rem;
+    background-color: lime;
+    color: black;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 1px rgba(0, 1, 0, 0.986);
+}
+
+.cancel-button {
+    margin: 1rem;
+    padding: 0.5rem;
+    background-color: lightcoral;
+    color: black;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 1px rgba(0, 1, 0, 0.986);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: burlywood;
+}
+
+
+/*Footer*/
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: burlywood;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+
+}
+
+.footer-links li {
+    padding: 0.5rem;
+    width: 100%;
+    text-align: start;
+}
+
+.footer-links a {
+    font-size: 1rem;
+
+    color: blue;
+
+    text-align: center;
+    width: 100%;
+}
+
+@media (min-width: 44rem) {
+    header {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+    }
+
+    .branding {
+        grid-column: span 12;
+        text-align: center;
+
+
+        display: flex;
+
+
+        gap: 0.5rem;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+
+    .header-title {
+        align-items: center;
+        justify-content: center;
+        flex-grow: 1;
+    }
+
+    .navigation {
+        grid-column: span 12;
+        display: flex;
+
+
+    }
+
+    .image-title {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+    }
+
+    .navigation {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .navigation-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        min-width: 300px;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .navigation-list li:hover {
+
+        display: block;
+    }
+
+    .dropdown-content {
+        display: block;
+        position: relative;
+        min-width: 200px;
+        box-shadow: none;
+
+        white-space: nowrap;
+    }
+
+    .dropdown-content a {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        margin: 0 0.5rem;
+        text-align: center;
+    }
+
+    .drop-botton::after {
+        display: none;
+    }
+
+
+    /*cat cards section*/
+    .famous-cats-section {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+    }
+
+    .cat-card {
+        grid-column: span 4;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .cat-display-image {
+        width: 200px;
+        height: 200px;
+        align-self: center;
+    }
+
+
+    .card {
+        grid-column: span 3;
+    }
+
+
+    /*footer*/
+
+    footer {
+        text-align: center;
+        padding: 1rem;
+        background-color: burlywood;
+    }
+
+    .footer-links {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        list-style-type: none;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .footer-links li {
+        grid-column: span 3;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .footer-links a {
+        font-size: 1rem;
+
+        color: blue;
+    }
+
+}
